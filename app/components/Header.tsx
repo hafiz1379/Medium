@@ -16,7 +16,7 @@ function Header() {
           <h3>About</h3>
           <h3>Contact</h3>
           <h3 className="bg-green-600 text-white px-4 py-1 rounded-full">
-            Follw
+            Follow
           </h3>
         </div>
       </div>
