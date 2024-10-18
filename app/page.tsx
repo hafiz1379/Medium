@@ -1,8 +1,14 @@
 import Head from "next/head";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Posts from "./components/Posts";
 
-export default function Home() {
+interface Props {
+  posts: [Post];
+}
+
+export default function Home({ posts }: Props) {
+  console.log(posts)
   return (
     <div className="max-w-6xl mx-auto">
       <Head>
@@ -11,6 +17,7 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
+      <Posts />
     </div>
   );
 }
